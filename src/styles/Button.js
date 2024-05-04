@@ -1,10 +1,9 @@
-
 import styled from "styled-components";
 
 const COLORS = {
     primary: {
         "--main": "indigo",
-        "--accent": "black",
+        "--accent": "grey",
 
     },
     secondary: {
@@ -27,31 +26,40 @@ function Button({ variant = "fill", color = "primary", ...props}) {
 }
 
 const ButtonBase = styled.button`
-cursor: pointer;
-font-size: 1rem;
-border: 1px solid transparent;
-border-radius: 6px;
-padding: 8px 16px;
-text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 25px;
+    width: auto;
+    gap: 6px;
+
 `;
 
 const FillButton = styled(ButtonBase)`
-background-color: var()(--main);
-color: var(--accent);
+    background-color: #0C2C59;
+    color: var(--accent);
+    font-weight: bold;
 
-&:hover {
-    opacity: 0.9;
-}`
+    &:hover {
+        opacity: 0.9;
+    }`
 
 const OutlineButton = styled(ButtonBase)`
-background-color: white;
-color: var(--main);
-border: 2px solid var(--main);
+    // background-color: white;
+    color: orange;
+    border: 2px solid red;
 
-&:hover {
-    background: hsl(235deg 85% 97%);
+    &:hover {
+        border-color: yellow;
 
-}
+    }
+`;
+
+export const TestButton = styled(ButtonBase)`
+    background-color: grey;
+    color: white;
+    width: 130px;
 `;
 
 export default Button;
