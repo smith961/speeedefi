@@ -21,7 +21,7 @@ function NavBar() {
           <Button> Liquidity </Button>
           <Button> Portfolio </Button>
           <Button> Collect Rewards </Button>
-          <TestButton className="test"> Connect Wallet </TestButton>
+          <TestButton> Connect Wallet </TestButton>
           
       </Nav>
     </Wrapper>

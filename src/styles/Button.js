@@ -33,26 +33,32 @@ const ButtonBase = styled.button`
     height: 25px;
     width: auto;
     gap: 6px;
+    position: relative;
+    box-shadow:
+        5.4px 13.6px 9.3px -75px rgba(0, 0, 0, 0.21),
+        43px 109px 74px -75px rgba(0, 0, 0, 0.105)
+    ;
+    // remove this
+    // margin-bottom: 2rem;
 
 `;
 
 const FillButton = styled(ButtonBase)`
-    background-color: #0C2C59;
+    background: #0C2C59;
     color: var(--accent);
     font-weight: bold;
+    border: none;
+    outline: none;
 
-    &:hover {
-        opacity: 0.9;
+    
     }`
 
-const OutlineButton = styled(ButtonBase)`
-    // background-color: white;
+    const OutlineButton = styled(ButtonBase)`
     color: orange;
     border: 2px solid red;
 
     &:hover {
         border-color: yellow;
-
     }
 `;
 
