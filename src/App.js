@@ -22,12 +22,12 @@ function App() {
         <Route path="/liquidity" element={<Liquidity/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/collect-reward" element={<CollectRewards/>}/>
-        <Route path="/wallet" element={<Wallet/>}/>
+     
         
       </Route>
 
         <Route path="*" element={<NotFoundPage/>}/>
-        
+
       </Routes>
      
       
