@@ -38,9 +38,8 @@ const ButtonBase = styled.button`
         5.4px 13.6px 9.3px -75px rgba(0, 0, 0, 0.21),
         43px 109px 74px -75px rgba(0, 0, 0, 0.105)
     ;
-    // remove this
-    // margin-bottom: 2rem;
-
+    
+    
 `;
 
 const FillButton = styled(ButtonBase)`
@@ -49,23 +48,42 @@ const FillButton = styled(ButtonBase)`
     font-weight: bold;
     border: none;
     outline: none;
-
     
-    }`
 
-    const OutlineButton = styled(ButtonBase)`
-    color: orange;
-    border: 2px solid red;
-
-    &:hover {
-        border-color: yellow;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.075rem;
+        background: red;
+        left: 0;
+        bottom: 0;
+        transform: scale(0, 1);
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease;
     }
+
+     &:hover::after{
+        transform: scale(1, 1);
+    }
+`;
+
+const OutlineButton = styled(ButtonBase)`
+    
+    color: yellow;
+   
 `;
 
 export const TestButton = styled(ButtonBase)`
     background-color: grey;
     color: white;
     width: 130px;
+
+    &:hover{
+        color: #B8860B;
+        background: #000000;
+        font-weight: bold;
+    }
 `;
 
 export default Button;

@@ -9,19 +9,34 @@ function NavBar() {
   return (
     <Wrapper>
       <Nav>
-        
-      <Link to='/'>
-
-        <StyledImg src={image} alt="logo"/>
-      </Link>
+        <Link to='/'>
+          <StyledImg src={image} alt="logo"/>
+        </Link>
           
-        
+        <Link to='/supply-lend'>
           <Button> Supply/Lend </Button>
+        </Link>
+          
+        <Link to='/loan-borrow'>
           <Button> Loan/Borrow </Button>
+        </Link>
+          
+        <Link to='/liquidity'>
           <Button> Liquidity </Button>
+        </Link>
+          
+        <Link to='/portfolio'>
           <Button> Portfolio </Button>
+        </Link>
+          
+        <Link to='/loan-borrow'>
           <Button> Collect Rewards </Button>
+        </Link>
+        
+        <Link to='wallet'>
           <TestButton> Connect Wallet </TestButton>
+        </Link> 
+          
           
       </Nav>
     </Wrapper>
