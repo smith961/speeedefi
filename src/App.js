@@ -20,7 +20,7 @@ function App() {
       <NavBar />
 
 =======
-      <NavBar/>
+      {/* <NavBar/> */}
       <Routes>
         <Route path="/" element={ <Home/>}>
 
