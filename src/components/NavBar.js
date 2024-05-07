@@ -13,7 +13,7 @@ function NavBar() {
           <StyledImg src={image} alt="logo"/>
         </Link>
           
-        <Link to='/supply-lend'>
+        <Link to='/'>
           <Button> Supply/Lend </Button>
         </Link>
           
