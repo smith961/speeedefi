@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+import  TestButton from '../styles/Button'
 import styled from 'styled-components'
 import image from '../images/Speedifi2.png'
 import Button from '../styles/Button'
@@ -82,10 +82,12 @@ function NavBar() {
         <Link to='/loan-borrow'>
         <Button>collect rewards </Button>
         </Link>
-        <Button
-            onClick ={handleSumbit} >
+        <TestButton onClick ={handleSumbit} >
+        
                {loggedIn ? "Logout" : "Connect to wallet"}
-            </Button>
+        </TestButton>
+            
+            
             
         </Nav>
     </Wrapper>
