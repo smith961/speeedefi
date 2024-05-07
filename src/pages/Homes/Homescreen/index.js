@@ -3,12 +3,16 @@ import Hero from '../../../components/Hero'
 import Footer from '../../../components/Footer'
 import Market from '../../../components/Market'
 
+
+
 const index = () => {
   return (
     <>
-    <Hero />
-    <Market />
-    <Footer />
+       
+       <Hero/>
+       <Market/>
+       <Footer/>
+
     </>
   )
 }

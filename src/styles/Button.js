@@ -1,10 +1,11 @@
-
 import styled from "styled-components";
 
 const COLORS = {
     primary: {
         "--main": "indigo",
-        "--accent": "white",
+
+        "--accent": "grey",
+
 
     },
     secondary: {
@@ -64,22 +65,23 @@ const FillButton = styled(ButtonBase)`
         transition: transform 0.3s ease;
     }
 
+
      &:hover::after{
         transform: scale(1, 1);
     }
 `;
 
-
-
 const OutlineButton = styled(ButtonBase)`
-
-color: yellow;
+    
+    color: yellow;
+   
 `;
 
 export const TestButton = styled(ButtonBase)`
     background-color: grey;
     color: white;
     width: 130px;
+
 
     &:hover{
         color: #B8860B;
