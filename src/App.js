@@ -1,6 +1,8 @@
 import React from 'react'
 import NavBar from './components/NavBar'
+
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+
 import Home from "./pages/Homes/Homescreen"
 import SupplyLend from "./pages/SupplyLend"
 import LoanBorrow from "./pages/LoanBorrow"
@@ -9,9 +11,15 @@ import Portfolio from "./pages/Portfolio"
 import CollectRewards from "./pages/CollectRewards"
 import NotFoundPage from "./pages/NotFoundPage"
 
+
+
+
 function App() {
   return (
     <BrowserRouter>
+      <NavBar />
+
+=======
       <NavBar/>
       <Routes>
         <Route path="/" element={ <Home/>}>
@@ -29,8 +37,13 @@ function App() {
 
       </Routes>
      
-      
+
     </BrowserRouter>
+  
+  
+    
+    
+
   )
 }
 

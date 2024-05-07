@@ -4,6 +4,7 @@ import Footer from '../../../components/Footer'
 import Market from '../../../components/Market'
 
 
+
 const index = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const index = () => {
        <Hero/>
        <Market/>
        <Footer/>
+
     </>
   )
 }
