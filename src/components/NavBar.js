@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react'
 
 import styled from 'styled-components'
-import image from '../images/Speedifi.png'
+import image from '../images/Speedifi2.png'
 import Button from '../styles/Button'
-import Capsule, {
-  Environment,
-  CapsuleModal,
-} from '@usecapsule/react-sdk';
+import Capsule, {Environment,CapsuleModal} from '@usecapsule/react-sdk';
+
+import { Link } from 'react-router-dom';
 
 
 
@@ -64,16 +63,26 @@ function NavBar() {
    
     <>
      <Wrapper>
-        <Logo>
-          <StyledImg src={image} alt="logo"/>
-        </Logo>
         <Nav>
-            <Button> Supply/Lend </Button>
-            <Button> Loan/Borrow </Button>
-            <Button> Liquidity </Button>
-            <Button> portfolio </Button>
-            <Button>collect rewards </Button>
-            <Button
+        <Link to='/'>
+          <StyledImg src={image} alt="logo"/>
+        </Link>
+        <Link to='supply-lend'>
+          <Button> Supply/Lend </Button>
+        </Link>
+        <Link to='/loan-borrow'>
+          <Button> Loan/Borrow </Button>
+        </Link>
+        <Link to='/liquidity'>
+          <Button> Liquidity </Button>
+        </Link>
+        <Link to='/portfolio'>
+        <Button> portfolio </Button>
+        </Link>
+        <Link to='/loan-borrow'>
+        <Button>collect rewards </Button>
+        </Link>
+        <Button
             onClick ={handleSumbit} >
                {loggedIn ? "Logout" : "Connect to wallet"}
             </Button>
@@ -88,11 +97,8 @@ function NavBar() {
     setIsOpen(false);
   }}
   appName={"speeedefi"}
- // a link to your logo, to be shown in the modal
-  
- 
-  
-  disableEmailLogin={false}
+  // logo = {logo}
+ disableEmailLogin={false}
 />
     </>
   )
@@ -100,28 +106,29 @@ function NavBar() {
 
 const StyledImg = styled.img`
   height: 100px;
-  width: 100px;
-  border-radius: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: start;
 `
 
-const Logo = styled.div`
-   width: 200px;
 
- `;
 
  const Wrapper = styled.header`
  display: flex;
- justify-content: start;
+ justify-content: space-between;
  align-items: center;
- padding: 8px;`
+ margin: 0;
+ background: #0C2C59;
+ width: auto;
+ `
  
 
  const Nav = styled.nav`
  display: flex;
  justify-content: space-evenly;
- gap: 60px;
- position: absolute;
- right: 8px;
+ align-items: center;
+ padding: 8px;
+ width: 100%;
  `
  
  

@@ -6,16 +6,16 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
-html {
-  /* background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) */
-  background-color: #3c59ff;
-  background: linear-gradient(225deg, #3c59ff 0%, #784BA0 50%, #2B86C5 100%);
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
 body{
-   background-color: rgb(100,149,237);
-   color: black;
+  background-color: #132b80;
+  background-image: linear-gradient(90deg, #132b80 0%, #9FACE6 100%);
+  
    
   
 }`
