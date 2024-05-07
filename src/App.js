@@ -7,7 +7,6 @@ import LoanBorrow from "./pages/LoanBorrow"
 import Liquidity from "./pages/Liquidity"
 import Portfolio from "./pages/Portfolio"
 import CollectRewards from "./pages/CollectRewards"
-import Wallet from "./pages/Wallet"
 import NotFoundPage from "./pages/NotFoundPage"
 
 function App() {

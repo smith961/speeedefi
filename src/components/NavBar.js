@@ -51,10 +51,6 @@ const StyledImg = styled.img`
   
 `
 
-const Logo = styled.div`
-  // width: 200px;
-
- `;
 
  const Wrapper = styled.header`
     display: flex;
