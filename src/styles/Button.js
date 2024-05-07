@@ -79,7 +79,7 @@ const OutlineButton = styled(ButtonBase)`
 
 export const TestButton = styled(ButtonBase)`
     background-color: grey;
-    color: white;
+    color: green;
     width: 130px;
     height: 30px;
 
