@@ -2,7 +2,9 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <section>
+      <h1>Borrow/Lend</h1>
+    </section>
   )
 }
 

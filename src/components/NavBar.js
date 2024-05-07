@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import  TestButton from '../styles/Button'
+import {TestButton} from '../styles/Button'
 import styled from 'styled-components'
-import image from '../images/Speedifi2.png'
+import logo from '../images/SpeedeFi.png'
 import Button from '../styles/Button'
-
 import Capsule, {Environment,CapsuleModal} from '@usecapsule/react-sdk';
-
 import { Link } from 'react-router-dom';
 
 
-// import {TestButton} from '../styles/Button'
 
 function NavBar() {
   const API_KEY = "4baa3c3bd70180626b580e9028d99192"
@@ -63,11 +60,10 @@ function NavBar() {
   
   return (
   <>
-
     <Wrapper>
       <Nav>
         <Link to='/'>
-          <StyledImg src={image} alt="logo"/>
+          <StyledImg src={logo} alt="logo"/>
         </Link>
           
         <Link to='/'>
@@ -89,29 +85,24 @@ function NavBar() {
         <Link to='/loan-borrow'>
           <Button> Collect Rewards </Button>
         </Link>
-        
-        <Link to='wallet'>
+              
         <TestButton onClick ={handleSumbit} >
-        
-        {loggedIn ? "Logout" : "Connect to wallet"}
-      </TestButton>
-        </Link> 
-          
-          
+          {loggedIn ? "Logout" : "Connect Wallet"}
+        </TestButton>
       </Nav>
     </Wrapper>
     <CapsuleModal
-  capsule={capsule}
-  isOpen={isOpen}
-  onClose={() => {
-    updateLoginStatus();
-    setIsOpen(false);
-  }}
-  appName={"speeedefi"}
-  // logo = {logo}
- disableEmailLogin={false}
-/>
-    </>
+      capsule={capsule}
+      isOpen={isOpen}
+      onClose={() => {
+        updateLoginStatus();
+        setIsOpen(false);
+      }}
+      appName={"speeedefi"}
+      logo = {logo}
+      disableEmailLogin={false}
+    />
+  </>
   )
 }
 
