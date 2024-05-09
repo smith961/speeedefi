@@ -9,7 +9,7 @@ import Capsule, {Environment,CapsuleModal} from '@usecapsule/react-sdk';
 import { Link } from 'react-router-dom';
 
 
-import {TestButton} from '../styles/Button'
+
 
 function NavBar() {
   const API_KEY = "4baa3c3bd70180626b580e9028d99192"
@@ -62,7 +62,7 @@ function NavBar() {
     };
   
   return (
-
+<>
 
     <Wrapper>
       <Nav>
@@ -91,7 +91,7 @@ function NavBar() {
         </Link>
         
         <Link to='wallet'>
-          <TestButton> Connect Wallet </TestButton>
+          <TestButton onClick = {handleSumbit}> Connect Wallet </TestButton>
         </Link> 
           
           
@@ -110,6 +110,7 @@ function NavBar() {
 />
     </>
   )
+
 }
 
 const StyledImg = styled.img`
